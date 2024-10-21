@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitFreaks</title>
 
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/3569cb447c.js" crossorigin="anonymous"></script>
-    
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navTitle">FitFreaks</div>
-            <i class="fa-solid fa-bars navIcon"></i>
-            <div class="navLinks">
-                <ul>
-                    <li class="navLink btnRed">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="navLink">
-                        <a href="#service">Service</a>
-                    </li>
-                    <li class="navLink">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li class="navLink">
-                        <a href="#about">About</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <section class="heroSection">
-            <section class="heroSection">
+    <script
+      src="https://kit.fontawesome.com/3569cb447c.js"
+      crossorigin="anonymous"
+    ></script>
 
-            </section>
-        </section>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Navbar Section -->
+
+      <nav class="navbar">
+        <div class="navTitle">FitFreaks</div>
+        <i class="fa-solid fa-bars navIcon"></i>
+        <div class="navLinks">
+          <ul>
+            <li class="navLink btnRed">
+              <a href="#home">Home</a>
+            </li>
+            <li class="navLink">
+              <a href="#service">Service</a>
+            </li>
+            <li class="navLink">
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="navLink">
+              <a href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+
+      <section class="heroSection">
+        <!-- .heroDescription>h1.heroTitle+p.heroSubTitle+.heroBtns>button.btnRed*2^^.heroImage>.heroImageCard*2 -->
+
+        <div class="heroDescription">
+          <h1 class="heroTitle">
+            Get body in <br />
+            <span class="pinyonFont"> shape</span> & stay <br />
+            healthy
+          </h1>
+          <p class="heroSubTitle">
+            A huge selection of health and fitness content, healthy recipes <br> and
+            transformation stories to help you get fit and stay fit!
+          </p>
+          <div class="heroBtns">
+            <button class="btnRed">Join Club Now</button>
+            <button class="btnTransprent">Download App</button>
+          </div>
+        </div 
+            class="heroImage">
+        <div class="heroImageContainer">
+          <div>
+            <img
+            src="./images/heroImage.png"
+            alt="Fitness Image"
+          />
+          </div>
+          <div class="heroImageCard1">
+            <h3 class="cardNumber">500+</h3>
+            <p class="cardText">Free Workout Videos</p>
+          </div>
+          <div class="heroImageCard2">
+            <h3 class="cardNumber">350+</h3>
+            <p class="cardText">Free Workout Videos</p>
+          </div>
+        </div>
+      </section>
     </header>
-</body>
+  </body>
 </html>
