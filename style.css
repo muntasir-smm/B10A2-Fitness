@@ -9,7 +9,6 @@
 body {
   background: #000000;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -34,7 +33,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(180deg, #111111, #77777700 100%);
+  background: linear-gradient(180deg, #58585880, #0000001a 100%);
   padding: 0 100px;
 }
 
@@ -80,27 +79,29 @@ body {
   color: #ffffff;
   padding: 0px 20px;
 }
-
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
 /* Hero Section Style */
 .heroSection {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
-  gap: 100px;
+  gap: 50px;
   padding: 20px;
 }
 
 .heroDescription {
-  flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: 30px;
-  background-color: cadetblue;
+  padding: 50px;
 }
 
 .heroTitle {
-  font-size: 78px;
+  font-size: 80px;
   font-weight: 900;
 }
 
@@ -120,57 +121,61 @@ body {
 }
 
 .heroImageContainer {
-  flex: 1;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: start;
-  background-color: cadetblue;
+  align-items: center;
 }
 
 .heroImage {
   height: 100%;
-  width: auto;
-  padding: 30px 10px;
-  background-color: cadetblue;
 }
 
 .heroImageCard1,
 .heroImageCard2 {
   position: absolute;
-  background-color: #ffffffcc;
+  box-sizing: border-box;
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: #3030308a;
   padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 4px 10px #00000033;
 }
 
 .heroImageCard1 {
-  top: 0px;
-  right: 0px;
+  top: 100px;
+  right: 150px;
 }
 
 .heroImageCard2 {
-  bottom: 0px;
-  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  bottom: 50px;
+  left: 100px;
+}
+.heroImageCard2 i {
+  color: #ff0000;
 }
 
 .cardNumber {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 900;
-  color: #ee5533;
 }
 
 .cardText {
   font-size: 16px;
-  font-weight: 400;
-  color: #333;
+  opacity: 0.5;
 }
 /* Responsive Design */
 
 /* For small device */
 @media (max-width: 576px) {
+  .header {
+    padding: 0px;
+  }
   .navLinks {
     display: none;
   }
@@ -182,5 +187,43 @@ body {
   .navbar {
     flex-direction: row;
     padding: 20px;
+  }
+
+  .heroSection {
+    flex-direction: column;
+  }
+
+  .heroDescription {
+    padding: 0px;
+  }
+
+  .heroTitle {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .heroSubTitle {
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  .heroBtns {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .heroImage {
+    height: 100%;
+  }
+
+  .heroImageCard1 {
+    top: 90px;
+    right: 10px;
+  }
+
+  .heroImageCard2 {
+    bottom: 90px;
+    left: 10px;
   }
 }
