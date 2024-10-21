@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pinyon+Script&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -13,43 +13,42 @@ body {
     font-size: 18px;
 }
 
-.btnRed{
+.btnRed {
     border-radius: 46px;
-    background: #ee5533;
+    background: #e6533c;
     padding: 8px 16px;
 }
 
-.header{
+.header {
     background: linear-gradient(180.00deg, #111111, #77777700 100%);
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
 }
 
-.navTitle{
-    color: #ee5533;
+.navTitle {
+    color: #e6533c;
     font-size: 36px;
     font-weight: 800;
 }
 
-.navIcon{
-    display: none; /* For Big Device It is hidden */
+.navIcon {
+    display: none; /* For big devices, it's hidden */
     color: #ffffff;
     font-size: 36px;
-
 }
 
-.navLinks{
-    width:auto;
+.navLinks {
+    width: auto;
     border: 2px solid #ffffff1a;
     border-radius: 40px;
 }
 
-.navLinks ul{
+.navLinks ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,8 +58,34 @@ body {
     list-style: none;
 }
 
-.navLinks a{
+.navLinks a {
     text-decoration: none;
     color: #ffffff;
     padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+/* For small device */
+@media (max-width: 576px) {
+    .navLinks {
+        display:none;
+    }
+
+    .navIcon {
+        display: inline;
+    }
+
+    .navbar {
+        flex-direction: row;
+        padding: 20px;
+    }
 }
