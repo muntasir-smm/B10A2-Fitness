@@ -357,11 +357,11 @@ select:focus {
   margin: 20px 150px;
   border-radius: 18px;
 }
-.teamMember{
+.teamMember {
   position: relative;
 }
 
-.trainerInfo{
+.trainerInfo {
   text-align: left;
   position: absolute;
   bottom: 10px;
@@ -488,5 +488,15 @@ select:focus {
   }
   #activity {
     grid-column: span 2;
+  }
+
+  /* Meet Our Team Style */
+  .teamContainer {
+    padding: 0px;
+  }
+
+  .teamMembers {
+    grid-template-columns: 1fr;
+    margin: 20px;
   }
 }
