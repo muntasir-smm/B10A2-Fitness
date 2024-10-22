@@ -14,6 +14,10 @@ body {
   font-size: 18px;
 }
 
+p {
+  opacity: 0.5;
+}
+
 .btnRed {
   border: none;
   border-radius: 46px;
@@ -181,10 +185,12 @@ body {
   opacity: 0.5;
 }
 
-.habitTitle {
+.habitTitle,
+.runTitle,
+.bmiTitle {
   font-size: 48px;
   font-weight: 900;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .habitSubTitle {
@@ -229,13 +235,9 @@ body {
 .runText {
   padding: 20px;
 }
-.runTitle {
-  font-size: 48px;
-  font-weight: 900;
-}
+
 .runSubTitle {
   padding: 20px 0;
-  opacity: 0.5;
 }
 .runImage {
   text-align: end;
@@ -244,6 +246,98 @@ body {
   border-radius: 18px;
 }
 
+/* BMI Calculator Style */
+
+.bmiContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.bmiHeader {
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.bmiBody {
+  background: #222222;
+  padding: 20px 100px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.bmiChartTitle,
+.calculatorTitle {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.bmiTable {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ffffff1a;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.bmiCalculator {
+  width: 100%;
+}
+
+.calculatorSubTitle {
+  text-align: justify;
+}
+
+/* =========================================================== */
+/* Form Style */
+.calculatorForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+input,
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff1a;
+  color: #ffffff4d;
+  /* appearance: none; */
+}
+select {
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffffff80;
+  background-color: #222222;
+}
+
+option:disabled {
+  color: #888;
+}
+#activity {
+  grid-column: span 2;
+}
 /* =================================================================
 =================================================================
 ================================================================= */
@@ -321,4 +415,9 @@ body {
     width: 100%;
     border-radius: 18px;
   }
+
+  /* .bmiTable thead th, .bmiTable tbody td {
+    font-size: 14px;
+    padding: 8px;
+  } */
 }
