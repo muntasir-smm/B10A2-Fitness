@@ -198,17 +198,17 @@ body {
   padding: 20px;
 }
 
-.habitImage{
+.habitImage {
   border-radius: 50%;
   margin-bottom: 20px;
 }
 
-.habitCardTitle{
+.habitCardTitle {
   font-size: 24px;
   font-weight: 800;
 }
 
-.habitCardText{
+.habitCardText {
   padding: 20px;
 }
 
@@ -216,7 +216,9 @@ body {
 
 /* For small device */
 @media (max-width: 576px) {
-  .header {
+  /* Header Section  */
+  .header,.heroDescription,
+  .habitsContainer {
     padding: 0px;
   }
   .navLinks {
@@ -228,37 +230,28 @@ body {
   }
 
   .navbar {
-    flex-direction: row;
     padding: 20px;
   }
 
+  /* Hero Section */
   .heroSection {
     flex-direction: column;
   }
 
-  .heroDescription {
-    padding: 0px;
-  }
-
   .heroTitle {
     font-size: 40px;
-    font-weight: 900;
     text-align: center;
   }
 
   .heroSubTitle {
     text-align: center;
-    opacity: 0.5;
   }
 
   .heroBtns {
     justify-content: center;
-    gap: 15px;
   }
 
-  .heroImage {
-    height: 100%;
-  }
+
 
   .heroImageCard1 {
     top: 90px;
@@ -268,5 +261,11 @@ body {
   .heroImageCard2 {
     bottom: 90px;
     left: 10px;
+  }
+
+  /* Change Your Habits Section */             
+  .habitsCard {
+    grid-template-columns: 1fr;
+    padding: 0px;
   }
 }
