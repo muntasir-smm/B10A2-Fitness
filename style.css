@@ -50,7 +50,8 @@ p {
   padding: 50px 0px;
 }
 
-.navTitle {
+.navTitle,
+.footerTitle {
   color: #e6533c;
   font-size: 36px;
   font-weight: 800;
@@ -375,6 +376,52 @@ select:focus {
   height: 100%;
   border-radius: 18px;
 }
+
+/* Footer Style */
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.footerTitle,
+.contactTitle,
+.footerGetStart {
+  padding-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer {
+  background: #ffffff1a;
+  padding: 40px 100px;
+}
+
+hr {
+  border: 2px solid #ffffff1a;
+  margin: 20px 0;
+}
+
+.copyRights {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
 /* =================================================================
 =================================================================
 ================================================================= */
@@ -498,5 +545,14 @@ select:focus {
   .teamMembers {
     grid-template-columns: 1fr;
     margin: 20px;
+  }
+
+  /* Footer Style */
+  .footerContent {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 40px;
   }
 }
