@@ -187,7 +187,8 @@ p {
 
 .habitTitle,
 .runTitle,
-.bmiTitle {
+.bmiTitle,
+.teamTitle {
   font-size: 48px;
   font-weight: 900;
   padding: 20px 0px;
@@ -331,6 +332,48 @@ select:focus {
 
 #activity {
   grid-column: span 2;
+}
+
+/* Meet Our Team Style */
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 100px;
+}
+.teamSubTitle {
+  padding-bottom: 20px;
+}
+
+.teamMembers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: space-between;
+  background: #222222;
+  padding: 30px;
+  margin: 20px 150px;
+  border-radius: 18px;
+}
+.teamMember{
+  position: relative;
+}
+
+.trainerInfo{
+  text-align: left;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #00000077;
+  border-radius: 10px;
+  padding: 6px;
+}
+.teamMember img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
 }
 /* =================================================================
 =================================================================
