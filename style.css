@@ -344,6 +344,58 @@ select:focus {
   grid-column: span 2;
 }
 
+/* ================================================================================================================================================================== */
+
+.workoutCalendar {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.calendarTitle {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.calendarSubTitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.calendarContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 1px solid #ccc;
+}
+
+.calendarHeader {
+  display: contents; /* Ensures proper grid alignment */
+}
+
+.calendarDay {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.calendarBody {
+  display: contents; /* Ensures proper grid alignment */
+}
+
+.calendarCell {
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: relative;
+}
+
+.workoutEntry {
+  display: block;
+  color: #333;
+}
+
+/* ================================================================================================================================================================== */
+
 .teamContainer {
   display: flex;
   flex-direction: column;
