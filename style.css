@@ -256,6 +256,7 @@ body {
   .heroDescription,
   .habitsContainer {
     padding: 0px;
+    margin: 0px;
   }
   .navLinks {
     display: none;
@@ -301,5 +302,23 @@ body {
   .habitsCard {
     grid-template-columns: 1fr;
     padding: 0px;
+  }
+
+  /* Extra Run Style */
+
+  .runContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0px;
+    margin: 20px;
+  }
+  .runText,
+  .runImage {
+    text-align: center;
+    padding: 20px;
+  }
+  .runImage img {
+    width: 100%;
+    border-radius: 18px;
   }
 }
