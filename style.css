@@ -212,12 +212,48 @@ body {
   padding: 20px;
 }
 
+/* Extra Run Style */
+
+.runContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  border-radius: 18px;
+  background: #222222;
+  padding: 30px;
+  margin: 40px 100px;
+}
+
+.runText {
+  padding: 20px;
+}
+.runTitle {
+  font-size: 48px;
+  font-weight: 900;
+}
+.runSubTitle {
+  padding: 20px 0;
+  opacity: 0.5;
+}
+.runImage {
+  text-align: end;
+}
+.runImage img {
+  border-radius: 18px;
+}
+
+/* =================================================================
+=================================================================
+================================================================= */
 /* Responsive Design */
 
 /* For small device */
 @media (max-width: 576px) {
   /* Header Section  */
-  .header,.heroDescription,
+  .header,
+  .heroDescription,
   .habitsContainer {
     padding: 0px;
   }
@@ -251,8 +287,6 @@ body {
     justify-content: center;
   }
 
-
-
   .heroImageCard1 {
     top: 90px;
     right: 10px;
@@ -263,7 +297,7 @@ body {
     left: 10px;
   }
 
-  /* Change Your Habits Section */             
+  /* Change Your Habits Section */
   .habitsCard {
     grid-template-columns: 1fr;
     padding: 0px;
