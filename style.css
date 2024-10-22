@@ -1,15 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pinyon+Script&display=swap");
 
+:root {
+  --primary-color: #e6533c;
+  --background-color: #222222;
+  --text-color: #ffffff;
+  --light-opacity: #ffffff4d;
+}
+
 * {
   margin: 0;
   padding: 0;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 body {
   background: #000000;
   font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
 }
@@ -22,26 +28,34 @@ p {
   border: none;
   border-radius: 46px;
   padding: 8px 16px;
-  background: #e6533c;
+  background: var(--primary-color);
   font-size: 18px;
   font-weight: 600;
+  transition: filter 0.3s;
 }
 
-.btnTransprent {
-  border: 1px solid #ffffff;
+.btnRed:hover {
+  filter: brightness(0.9);
+}
+
+.btnTransparent {
+  border: 1px solid var(--text-color);
   border-radius: 46px;
   padding: 8px 16px;
   background: transparent;
   font-size: 18px;
   font-weight: 600;
+  transition: filter 0.3s;
+}
+
+.btnTransparent:hover {
+  filter: brightness(0.9);
 }
 
 .header {
   background: linear-gradient(180deg, #58585880, #0000001a 100%);
   padding: 0 100px;
 }
-
-/* Navbar Style */
 
 .navbar {
   display: flex;
@@ -52,14 +66,14 @@ p {
 
 .navTitle,
 .footerTitle {
-  color: #e6533c;
+  color: var(--primary-color);
   font-size: 36px;
   font-weight: 800;
 }
 
 .navIcon {
   display: none; /* For big devices, it's hidden */
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 36px;
 }
 
@@ -74,20 +88,17 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 8px;
+  padding: 10px;
   margin: 0;
   list-style: none;
 }
 
 .navLinks a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-color);
   padding: 0px 20px;
 }
-/* ====================================== */
-/* ====================================== */
-/* ====================================== */
-/* Hero Section Style */
+
 .heroSection {
   display: flex;
   justify-content: space-around;
@@ -112,15 +123,13 @@ p {
 
 .pinyonFont {
   font-family: "Pinyon Script", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .heroSubTitle {
   opacity: 0.5;
 }
 
-.heroBtns {
+.heroButtons {
   display: flex;
   gap: 15px;
 }
@@ -161,6 +170,7 @@ p {
   bottom: 50px;
   left: 100px;
 }
+
 .heroImageCard2 i {
   color: #ff0000;
 }
@@ -174,8 +184,6 @@ p {
   font-size: 16px;
   opacity: 0.5;
 }
-
-/* Change Your Habits Style */
 
 .habitsContainer {
   text-align: center;
@@ -193,6 +201,7 @@ p {
   font-size: 48px;
   font-weight: 900;
   padding: 20px 0px;
+  text-align: center;
 }
 
 .habitSubTitle {
@@ -220,8 +229,6 @@ p {
   padding: 20px;
 }
 
-/* Extra Run Style */
-
 .runContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -229,7 +236,7 @@ p {
   align-items: center;
   gap: 100px;
   border-radius: 18px;
-  background: #222222;
+  background: var(--background-color);
   padding: 30px;
   margin: 40px 100px;
 }
@@ -238,17 +245,21 @@ p {
   padding: 20px;
 }
 
+.runTitle {
+  text-align: left;
+}
+
 .runSubTitle {
   padding: 20px 0;
 }
+
 .runImage {
   text-align: end;
 }
+
 .runImage img {
   border-radius: 18px;
 }
-
-/* BMI Calculator Style */
 
 .bmiContainer {
   display: flex;
@@ -264,11 +275,10 @@ p {
 }
 
 .bmiBody {
-  background: #222222;
+  background: var(--background-color);
   padding: 40px 100px;
-
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
@@ -306,7 +316,6 @@ td {
   text-align: justify;
 }
 
-/* Form Style */
 .calculatorForm {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -320,7 +329,7 @@ select {
   border: none;
   border-radius: 5px;
   background-color: #ffffff1a;
-  color: #ffffff4d;
+  color: var(--light-opacity);
   cursor: pointer;
 }
 
@@ -335,7 +344,6 @@ select:focus {
   grid-column: span 2;
 }
 
-/* Meet Our Team Style */
 .teamContainer {
   display: flex;
   flex-direction: column;
@@ -344,6 +352,7 @@ select:focus {
   text-align: center;
   padding: 0px 100px;
 }
+
 .teamSubTitle {
   padding-bottom: 20px;
 }
@@ -353,11 +362,12 @@ select:focus {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   justify-content: space-between;
-  background: #222222;
+  background: var(--background-color);
   padding: 30px;
   margin: 20px 150px;
   border-radius: 18px;
 }
+
 .teamMember {
   position: relative;
 }
@@ -371,13 +381,12 @@ select:focus {
   border-radius: 10px;
   padding: 6px;
 }
+
 .teamMember img {
   width: 100%;
   height: 100%;
   border-radius: 18px;
 }
-
-/* Footer Style */
 
 .footerContent {
   display: grid;
@@ -392,16 +401,16 @@ select:focus {
   padding-bottom: 20px;
 }
 
-ul {
+.footer ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
+.footer ul li {
   margin-bottom: 10px;
 }
 
-ul li a {
+.footer ul li a {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -409,6 +418,7 @@ ul li a {
 .footer {
   background: #ffffff1a;
   padding: 40px 100px;
+  margin-top: 50px;
 }
 
 hr {
@@ -419,23 +429,18 @@ hr {
 .copyRights {
   text-align: center;
   font-size: 14px;
-  color: #aaa;
 }
 
-/* =================================================================
-=================================================================
-================================================================= */
-/* Responsive Design */
-
-/* For small device */
+/* Responsive Styles */
 @media (max-width: 576px) {
-  /* Header Section  */
+  /* Header Section */
   .header,
   .heroDescription,
   .habitsContainer {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
+
   .navLinks {
     display: none;
   }
@@ -462,7 +467,7 @@ hr {
     text-align: center;
   }
 
-  .heroBtns {
+  .heroButtons {
     justify-content: center;
   }
 
@@ -479,36 +484,36 @@ hr {
   /* Change Your Habits Section */
   .habitsCard {
     grid-template-columns: 1fr;
-    padding: 0px;
+    padding: 0;
   }
 
   /* Extra Run Style */
-
   .runContainer {
     grid-template-columns: 1fr;
     gap: 10px;
-    padding: 0px;
+    padding: 0;
     margin: 20px;
   }
+
   .runText,
   .runImage {
     text-align: center;
     padding: 20px;
   }
+
   .runImage img {
     width: 100%;
     border-radius: 18px;
   }
 
   /* BMI Calculator Style */
-
   .bmiContainer {
-    padding: 0px;
+    padding: 0;
     margin: 0;
   }
 
   .bmiHeader {
-    padding: 0px;
+    padding: 0;
     text-align: center;
   }
 
@@ -528,18 +533,18 @@ hr {
     text-align: center;
   }
 
-  /* Form Style */
   .calculatorForm {
     grid-template-columns: 45% 45%;
     justify-content: center;
   }
+
   #activity {
     grid-column: span 2;
   }
 
   /* Meet Our Team Style */
   .teamContainer {
-    padding: 0px;
+    padding: 0;
   }
 
   .teamMembers {
