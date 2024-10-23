@@ -696,7 +696,9 @@ hr {
     grid-template-columns: 1fr;
     margin: 20px;
   }
-
+  .teamMember img {
+    height: 200px;
+  }
   /* Footer Style */
   .footerContent {
     grid-template-columns: 1fr;
