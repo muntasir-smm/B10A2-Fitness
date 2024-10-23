@@ -2,5 +2,15 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "C_Cpp.hover": "default",
+  "editor.quickSuggestionsDelay": 10,
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeActionsOnSave": {},
+  "editor.linkedEditing": true,
+  "editor.cursorWidth": 1,
+  "editor.inlineSuggest.suppressSuggestions": false,
+  "files.autoSaveDelay": 3000
 }

@@ -149,7 +149,7 @@
       <!-- BMI Calculator Section -->
       <section class="bmiContainer">
         <div class="bmiHeader">
-          <h1 class="bmiTitle">BMI Calculator</h1>
+          <h1 class="bmiTitle">Calculate Your BMI</h1>
           <p class="bmiSubTitle">
             Quickly determine your BMI to understand your weight status!
           </p>
@@ -186,7 +186,7 @@
           </div>
 
           <div class="bmiCalculator">
-            <h2 class="calculatorTitle">Calculate Your BMI</h2>
+            <h2 class="calculatorTitle">BMI Calculator</h2>
             <p class="calculatorSubTitle">
               Input your details below to calculate your Body Mass Index (BMI).
             </p>
@@ -240,65 +240,82 @@
       <!-- ================================================================================================================================================ -->
 
       <!-- Challenge Section  -->
-      <!-- This part will more useful with JS. But in this assignment I only use HTML and CSS -->
+      <!-- In this assignment I only use HTML and CSS.
+       Now its hard coded and user can't interact.
+       But this part will more useful with JS. 
+       Then user can interact with calender date.
+      -->
       <section class="workoutCalendar">
         <h1 class="calendarTitle">Workout Calendar</h1>
         <p class="calendarSubTitle">
-          Plan your workouts and track your progress with our interactive
+          Plan your workouts and track your progress with our (interactive)
           calendar!
         </p>
-        <div class="calendarContainer">
-          <div class="days">
-            <div class="day">Sun</div>
-            <div class="day">Mon</div>
-            <div class="day">Tue</div>
-            <div class="day">Wed</div>
-            <div class="day">Thu</div>
-            <div class="day">Fri</div>
-            <div class="day">Sat</div>
-          </div>
-          <div class="calendarBody">
-            <!-- Empty cells for the first few days (offset for the month) -->
 
+        <div class="calendarContainer">
+          <div class="calendarBody">
+            <div class="year-month">
+              <div class="year">2024</div>
+              <div class="month">October</div>
+            </div>
+            <!-- Days -->
+            <div class="days">
+              <div class="day">Sun</div>
+              <div class="day">Mon</div>
+              <div class="day">Tue</div>
+              <div class="day">Wed</div>
+              <div class="day">Thu</div>
+              <div class="day">Fri</div>
+              <div class="day">Sat</div>
+            </div>
+
+            <!-- Calendar Cells -->
             <div class="calendarCell"></div>
             <div class="calendarCell"></div>
-            <div class="calendarCell">1</div>
+            <div class="calendarCell workoutDay">1</div>
             <div class="calendarCell workoutDay">2</div>
             <div class="calendarCell">3</div>
-
             <div class="calendarCell">4</div>
-            <div class="calendarCell workoutDay">5</div>
-            <div class="calendarCell">6</div>
-            <div class="calendarCell">7</div>
+            <div class="calendarCell">5</div>
+            <div class="calendarCell workoutDay">6</div>
+            <div class="calendarCell workoutDay">7</div>
             <div class="calendarCell">8</div>
             <div class="calendarCell">9</div>
-            <div class="calendarCell workoutDay">10</div>
-
+            <div class="calendarCell">10</div>
             <div class="calendarCell">11</div>
-            <div class="calendarCell">12</div>
-            <div class="calendarCell workoutDay">13</div>
+            <div class="calendarCell workoutDay">12</div>
+            <div class="calendarCell">13</div>
             <div class="calendarCell workoutDay">14</div>
             <div class="calendarCell">15</div>
             <div class="calendarCell">16</div>
             <div class="calendarCell workoutDay">17</div>
-
             <div class="calendarCell">18</div>
             <div class="calendarCell">19</div>
-            <div class="calendarCell">20</div>
+            <div class="calendarCell workoutDay">20</div>
             <div class="calendarCell">21</div>
             <div class="calendarCell">22</div>
-            <div class="calendarCell workoutDay">23</div>
+            <div class="calendarCell">23</div>
             <div class="calendarCell">24</div>
-
             <div class="calendarCell">25</div>
             <div class="calendarCell workoutDay">26</div>
-            <div class="calendarCell workoutDay">27</div>
+            <div class="calendarCell">27</div>
             <div class="calendarCell">28</div>
-            <div class="calendarCell">29</div>
+            <div class="calendarCell workoutDay">29</div>
             <div class="calendarCell">30</div>
+            <div class="calendarCell">31</div>
             <div class="calendarCell"></div>
             <div class="calendarCell"></div>
-            <div class="calendarCell"></div>
+          </div>
+        </div>
+
+        <div class="calendarLegend">
+          <div class="legendItem">
+            <span class="legendColor" style="background-color: #ff5722"></span>
+            <span>Workout Day</span>
+          </div>
+          <div class="legendItem">
+            <span class="legendColor" style="background-color: #333"></span>
+            <span>Rest Day</span>
           </div>
         </div>
       </section>
