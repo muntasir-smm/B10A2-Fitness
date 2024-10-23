@@ -186,6 +186,7 @@ p {
 
 .habitTitle,
 .runTitle,
+.trainingTitle,
 .bmiTitle,
 .teamTitle,
 .calculatorTitle,
@@ -239,7 +240,9 @@ p {
   padding: 20px;
 }
 
-.runTitle {
+.runTitle,
+.trainingTitle,
+.trainingSubTitle {
   text-align: left;
 }
 
@@ -254,6 +257,91 @@ p {
 
 .runImage img {
   border-radius: 18px;
+}
+
+/* Optional Part */
+/* Training and Exercises Style */
+
+.trainingContainer {
+  margin: 40px 100px;
+  border-radius: 10px;
+}
+
+.trainingSubTitle {
+  margin-bottom: 40px;
+}
+
+.trainingImageContainer {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0px;
+}
+
+#image1 {
+  grid-column: span 3;
+  background-color: #06ffd280;
+}
+#image1 img {
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+}
+
+#image2 {
+  grid-column: span 4;
+  background-color: #ff3a3aa3;
+}
+#image2 img {
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+}
+
+#image3 {
+  grid-column: span 2;
+  background-color: #5b5b5bb5;
+}
+#image3 img {
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+}
+
+#image4 {
+  grid-column: span 4;
+  background-color: #58585880;
+}
+#image4 img {
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+}
+
+#image5 {
+  grid-column: span 2;
+  background-color: #70fb3e92;
+}
+#image5 img {
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+}
+
+#image6 {
+  grid-column: span 3;
+  background-color: #0047ff4d;
+}
+#image6 img {
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+}
+
+.tImageName {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff5722;
 }
 
 /* BMI Calculator Style */
@@ -402,11 +490,6 @@ select:focus {
   background: linear-gradient(145deg, #434343, #1a1a1a);
 }
 
-/* .calendarCell:nth-child(2n+7) {
-  background-color: #ff5722;
-  background: linear-gradient(145deg, #ff7043, #ff3d00);
-  color: #fff;
-} */
 .workoutDay {
   background-color: #ff5722;
   background: linear-gradient(145deg, #ff7043, #ff3d00);
@@ -418,8 +501,6 @@ select:focus {
   transform: scale(1.1);
   background-color: #555;
 }
-
-/* Legend Styling */
 .calendarLegend {
   display: flex;
   justify-content: center;
@@ -439,50 +520,30 @@ select:focus {
   border-radius: 3px;
 }
 
-/* Responsiveness for smaller devices */
-@media (max-width: 576px) {
-  .workoutCalendar {
-    padding: 20px;
-  }
-
-  .calendarSubTitle {
-    font-size: 14px;
-  }
-
-  .calendarBody {
-    gap: 5px;
-  }
-
-  .day,
-  .calendarCell {
-    padding: 10px;
-    font-size: 12px;
-  }
-}
-
 /* ================================================================================================================================================================== */
 
+/* Meet Our Team Style */
 .teamContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0px 100px;
+  padding: 0px 200px;
 }
 
 .teamSubTitle {
-  padding-bottom: 20px;
+  width: 60%;
 }
 
 .teamMembers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-between;
   background: #222222;
   padding: 30px;
-  margin: 20px 150px;
+  margin: 20px;
   border-radius: 18px;
 }
 
@@ -502,9 +563,13 @@ select:focus {
 
 .teamMember img {
   width: 100%;
+  max-width: 300px;
   height: 100%;
+  max-height: 300px;
   border-radius: 18px;
 }
+
+/* Footer Style */
 
 .footerContent {
   display: grid;
@@ -549,12 +614,15 @@ hr {
   font-size: 14px;
 }
 
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
 /* Responsive Styles */
 @media (max-width: 576px) {
   /* Header Section */
   .header,
   .heroDescription,
-  .habitsContainer {
+  .habitsContainer,
+  .trainingContainer {
     padding: 0;
     margin: 0;
   }
@@ -630,6 +698,41 @@ hr {
     border-radius: 18px;
   }
 
+  /* Trainings and Exercises Style */
+  .trainingContainer {
+    margin: 0px;
+    padding: 0px 30px;
+  }
+
+  .trainingImageContainer {
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0px;
+  }
+
+  #image1 {
+    grid-column: span 5;
+  }
+
+  #image2 {
+    grid-column: span 4;
+  }
+
+  #image3 {
+    display: none;
+  }
+
+  #image4 {
+    grid-column: span 4;
+  }
+
+  #image5 {
+    grid-column: span 5;
+  }
+
+  #image6 {
+    display: none;
+  }
+
   /* BMI Calculator Style */
   .bmiContainer {
     padding: 0;
@@ -646,9 +749,8 @@ hr {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-
-  .bmiCalculator {
-    width: 80%;
+  .bmiCalculator button {
+    margin-left: 20px;
   }
 
   .bmiTable,
@@ -691,7 +793,10 @@ hr {
   .teamContainer {
     padding: 0;
   }
-
+  .teamSubTitle {
+    width: 80%;
+    text-align: justify;
+  }
   .teamMembers {
     grid-template-columns: 1fr;
     margin: 20px;
@@ -706,5 +811,9 @@ hr {
 
   .footer {
     padding: 40px;
+  }
+
+  .footerSubTitle {
+    text-align: justify;
   }
 }
